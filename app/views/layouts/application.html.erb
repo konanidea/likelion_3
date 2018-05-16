@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Likelion3</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+    <body>
+      <header id="topbar"
+      style="display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-top:50px;
+      ">
+      <img alt="" src="https://uni.likelion.org/assets/icons/logo-e1bcaa0de5916424124c33c0c124a6cdbabfdf35f2c9f3075fbc3fcc934c4cc5.svg">
+      </header>
+      
+      
+      <nav class="navbar navbar-light"
+      style="background-color: #ffffff;
+      border-bottom: 1px solid #dee2e6;
+      
+      ">
+        <a class="nav-link" href="/home/fir">강의 <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/home/sec">과제 <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/home/thi">질문 <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/home/forth">게시판 <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/home/fif">놀이터 <span class="sr-only">(current)</span></a>
+      </nav>
+      
+
+      
+
+    </main><!-- /.container -->
+    <%= yield %>
+    <!-- 여기에 index.html.erb문서를 불러옴 -->
+  </body>
+</html>
